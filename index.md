@@ -3,56 +3,74 @@ slug: "github-carbon-storage-projections"
 title: "carbon-storage-projections"
 repo: "justin-napolitano/carbon-storage-projections"
 githubUrl: "https://github.com/justin-napolitano/carbon-storage-projections"
-generatedAt: "2025-11-23T08:19:42.936330Z"
+generatedAt: "2025-11-23T08:41:07.120972Z"
 source: "github-auto"
 ---
 
 
-# Behind the Scenes of Carbon Storage Projections: Shipping CO2 Across the Atlantic
+# Carbon Storage Projections: Monte Carlo Simulation of Shipping CO2 from Europe to US Ports
 
-Hey there! I’m Justin Napolitano, and I want to take you on a little journey through one of my recent projects: modeling the economics and feasibility of shipping carbon dioxide from Europe to the United States. If you’re curious about climate tech, carbon capture, or just love nerding out with Monte Carlo simulations, this post is for you.
+## Motivation
 
-## Why I Started This
+The transportation of carbon dioxide (CO2) from Europe to the United States for storage or industrial use is an emerging area of interest in climate mitigation strategies. Understanding the economic feasibility and cost implications of this shipping process is critical for stakeholders considering infrastructure investments and policy decisions.
 
-I’ve always been fascinated by how we can tackle climate change with technology and smart infrastructure. After publishing a report identifying potential US ports suitable for carbon imports, I found myself asking: what’s the actual economic value of shipping CO2 across the Atlantic? Is it feasible? How much could it cost annually?
+This project addresses the lack of transparent, quantitative analysis on the annual cost of shipping CO2 across the Atlantic. It aims to provide a rigorous, reproducible framework to estimate these costs and assess the viability of different port options and shipping configurations.
 
-Turns out, this question is more complex than it seems. Shipping CO2 isn’t just about distance — it involves dynamic variables like shipping capacity, port selection, trip duration, and fluctuating costs. To tackle this, I built a Monte Carlo simulation in Python that models these uncertainties and projects the annual shipping cost.
+## Problem Statement
 
-## What This Project Solves
+Shipping CO2 involves complex logistics with many dynamic variables, including shipping distances, vessel capacities, port choices, and trip durations. Traditional deterministic models fail to capture the uncertainty inherent in these parameters.
 
-The core problem here is uncertainty. Traditional cost estimates often use fixed values, which don’t capture the variability in real-world shipping logistics. By simulating a range of possible scenarios, my model helps stakeholders understand the potential economic scale and risks involved in carbon shipping.
+This project uses Monte Carlo simulations to model these uncertainties, producing probabilistic cost projections rather than single-point estimates. This approach allows for better risk assessment and decision-making.
 
-This is crucial for policymakers, investors, and engineers who want to design effective carbon storage and transport infrastructure. Knowing the likely cost ranges helps in planning and prioritizing investments.
+## Implementation Overview
 
-## How It’s Built
+### Data and Inputs
 
-I used Jupyter Notebooks for development and documentation, leveraging Python’s scientific stack. The simulation randomly samples variables from normal distributions bounded by realistic minima and maxima:
+- Port locations in Europe and the US, including distances between them
+- Shipping vessel capacities, converted from LNG tanker data to supercritical CO2 equivalents
+- Cost of transport per ton, initially fixed but planned to be modeled as a distribution
+- Trip durations and round-trip considerations
 
-- Shipping distances between various European origin ports and US terminal ports
-- Shipping capacity of vessels (converted from LNG tanker data to supercritical CO2 equivalents)
-- Round-trip shipping durations
-- Cost of transport per ton (currently fixed, but planned to be randomized with better data)
+### Methodology
 
-The notebooks also include markdown reports explaining methodology, findings, and revisions. Transparency is key — I even published corrections when I found a decimal conversion error that inflated earlier cost estimates.
+The core of the project is a Monte Carlo simulation implemented in Python within Jupyter Notebooks. Key features include:
 
-## Interesting Implementation Details
+- Random sampling of dynamic variables from normal distributions bounded by realistic minima and maxima
+- Modeling of shipping infrastructure capacity based on academic sources (e.g., IEFE – Centre for Research on Energy and Environmental Economics and Policy)
+- Correction of previous errors related to unit conversions, demonstrating the importance of transparency and reproducibility
 
-- **Monte Carlo Simulation**: Instead of a single deterministic output, the model runs thousands of iterations with random inputs to generate a distribution of possible outcomes. This approach better reflects real-world uncertainty.
+### Notebooks and Reports
 
-- **Data Sources**: I adapted LNG shipping capacity data to estimate CO2 transport volumes, which required careful unit conversions and assumptions about supercritical CO2 properties.
+- `shipping_projections.ipynb`: Contains the main Monte Carlo simulation projecting annual shipping costs.
+- `shipping_carbon_feasibility.ipynb`: Evaluates the feasibility of shipping carbon, revising earlier cost estimates.
+- `carbon-storage-projects.ipynb`: Additional analyses related to carbon storage.
+- `europe_ports.ipynb`: Data analysis focused on European port characteristics.
 
-- **Port Selection**: The model accounts for variable ports of origin and destination, recognizing that different routes impact costs and feasibility.
+Each notebook is accompanied by markdown reports summarizing findings and methodology.
 
-- **Error Correction & Transparency**: I discovered a decimal error in distance conversion early on, which led to inflated cost projections. Publishing the code and reports openly allowed me to correct this quickly and maintain credibility.
+## Technical Details
 
-## Why This Project Matters for My Career
+- Python 3.7+ with libraries such as numpy, pandas, matplotlib, and scipy for statistical modeling and visualization
+- Jupyter Notebook environment for interactive development and documentation
+- Monte Carlo simulation framework sampling from distributions to capture uncertainty
 
-Working on this project has deepened my expertise in environmental economics, data modeling, and transparent scientific communication. It’s a perfect blend of my interests in climate tech and software development.
+## Lessons and Observations
 
-Moreover, it demonstrates my commitment to rigor and openness — qualities that are essential for meaningful impact in energy and environmental research. Sharing my process and findings publicly not only helps the community but also strengthens my professional portfolio.
+- Initial cost estimates were significantly overstated due to a unit conversion error, highlighting the necessity of code transparency and reproducibility.
+- Distance within Europe has a marginal effect on shipping cost variance; the major cost driver is the transatlantic crossing.
+- Potential US ports closer to the Gulf of Mexico may reduce shipping costs by minimizing Caribbean navigation.
 
-If you’re interested, the full project is on GitHub, complete with notebooks and detailed markdown reports. I hope this sparks more conversations and innovations around carbon capture and storage logistics.
+## Practical Use
 
-Thanks for reading!
+This project serves as a reference model for engineers and analysts evaluating carbon shipping logistics. It provides a replicable methodology to update assumptions, incorporate new data, and explore different scenarios.
 
-— Justin Napolitano
+## Future Directions
+
+- Incorporate more granular and dynamic cost data to refine transport cost distributions
+- Extend the model to include additional ports and alternative shipping routes
+- Develop automated validation tests for simulation outputs
+- Create interactive dashboards for stakeholders to explore simulation results
+
+---
+
+This documentation aims to provide a clear, technical reference for returning developers and engineers to understand the project's scope, methodology, and implementation details without extraneous commentary or motivational language.
