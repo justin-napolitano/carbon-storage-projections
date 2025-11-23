@@ -73,22 +73,14 @@ carbon-storage-projections/
 ├── shipping_carbon_feasibility_files/
 ├── shipping_projections.ipynb
 ├── shipping_projections.md
-└── shipping_projections_files/
+├── shipping_projections_files/
+├── README.md
 ```
-
-- `.ipynb` files contain the main analyses and simulations.
-- `.md` files provide detailed markdown reports summarizing the notebooks.
-- `_files` directories contain supporting files for the markdown reports.
-- `histogram.png` likely a visualization used in the analyses.
 
 ## Future Work / Roadmap
 
-- Incorporate more accurate and dynamic cost of transport data into simulations
-- Expand geographic scope beyond Europe-US shipping routes
-- Enhance modeling of shipping infrastructure and port logistics
-- Develop interactive dashboards for visualization of simulation results
-- Publish detailed methodology and data sources for increased transparency
-
----
-
-*Note: This project is a work in progress and reflects ongoing research into carbon shipping economics.*
+- Refine cost of transport modeling by incorporating more accurate and dynamic data sources
+- Expand simulation parameters to include additional variables affecting shipping feasibility
+- Develop automated testing and validation for simulation outputs
+- Integrate visualization dashboards for interactive exploration of results
+- Extend analysis to other geographic routes and carbon storage scenarios
