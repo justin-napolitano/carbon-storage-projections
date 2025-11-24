@@ -21,6 +21,12 @@ seoSecondaryKeywords:
   - co2 transport logistics
   - carbon storage projections
 seoOptimized: true
+topicFamily: datascience
+topicFamilyConfidence: 1
+topicFamilyNotes: >-
+  The post centers on a Monte Carlo simulation for analyzing CO2 shipping costs, involving data
+  inputs, probabilistic modeling, Jupyter notebooks, and Python code, which aligns very closely with
+  the datascience family's scope including simulations, data analysis, and notebooks.
 ---
 
 # Carbon Storage Projections: Monte Carlo Simulation of Shipping CO2 from Europe to US Ports
@@ -89,3 +95,4 @@ This project serves as a reference model for engineers and analysts evaluating c
 ---
 
 This documentation aims to provide a clear, technical reference for returning developers and engineers to understand the project's scope, methodology, and implementation details without extraneous commentary or motivational language.
+
