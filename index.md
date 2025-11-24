@@ -1,12 +1,27 @@
 ---
-slug: "github-carbon-storage-projections"
-title: "carbon-storage-projections"
-repo: "justin-napolitano/carbon-storage-projections"
-githubUrl: "https://github.com/justin-napolitano/carbon-storage-projections"
-generatedAt: "2025-11-23T08:41:07.120972Z"
-source: "github-auto"
+slug: github-carbon-storage-projections
+title: Monte Carlo Simulation of Carbon Dioxide Shipping Costs from Europe to US Ports
+repo: justin-napolitano/carbon-storage-projections
+githubUrl: https://github.com/justin-napolitano/carbon-storage-projections
+generatedAt: '2025-11-23T08:41:07.120972Z'
+source: github-auto
+summary: >-
+  Analysis of shipping CO2 from Europe to US ports using Monte Carlo simulation to model cost
+  uncertainties and logistical variables in carbon storage transport.
+tags:
+  - carbon-storage
+  - monte-carlo-simulation
+  - co2-transport
+  - shipping-costs
+  - python
+  - climate-mitigation
+seoPrimaryKeyword: carbon dioxide shipping cost simulation
+seoSecondaryKeywords:
+  - monte carlo simulation
+  - co2 transport logistics
+  - carbon storage projections
+seoOptimized: true
 ---
-
 
 # Carbon Storage Projections: Monte Carlo Simulation of Shipping CO2 from Europe to US Ports
 
