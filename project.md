@@ -7,8 +7,8 @@ githubUrl: https://github.com/justin-napolitano/carbon-storage-projections
 generatedAt: '2025-11-24T21:34:08.537Z'
 source: github-auto
 summary: >-
-  Explore Jupyter notebooks analyzing the cost and feasibility of shipping
-  carbon dioxide from Europe to US ports using Monte Carlo simulations.
+  Explore Jupyter notebooks analyzing the cost and feasibility of shipping carbon dioxide from
+  Europe to US ports using Monte Carlo simulations.
 tags:
   - jupyter
   - python
@@ -28,8 +28,8 @@ seoSecondaryKeywords:
   - data visualization
   - python libraries for analysis
 seoOptimized: true
-topicFamily: null
-topicFamilyConfidence: null
+topicFamily: datascience
+topicFamilyConfidence: 0.9
 kind: project
 entryLayout: project
 showInProjects: true
@@ -122,4 +122,5 @@ carbon-storage-projections/
 - Develop automated testing and validation for simulation outputs
 - Integrate visualization dashboards for interactive exploration of results
 - Extend analysis to other geographic routes and carbon storage scenarios
+
 
