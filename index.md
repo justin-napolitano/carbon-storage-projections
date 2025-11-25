@@ -1,13 +1,13 @@
 ---
 slug: github-carbon-storage-projections
-title: Monte Carlo Simulation of Carbon Dioxide Shipping Costs from Europe to US Ports
+title: Monte Carlo Simulation for CO2 Shipping Cost Projections
 repo: justin-napolitano/carbon-storage-projections
 githubUrl: https://github.com/justin-napolitano/carbon-storage-projections
 generatedAt: '2025-11-23T08:41:07.120972Z'
 source: github-auto
 summary: >-
-  Analysis of shipping CO2 from Europe to US ports using Monte Carlo simulation to model cost
-  uncertainties and logistical variables in carbon storage transport.
+  Explore a Monte Carlo simulation framework for estimating CO2 shipping costs
+  from Europe to US ports, focusing on methodology and implementation.
 tags:
   - carbon-storage
   - monte-carlo-simulation
@@ -15,18 +15,24 @@ tags:
   - shipping-costs
   - python
   - climate-mitigation
-seoPrimaryKeyword: carbon dioxide shipping cost simulation
+  - logistics
+seoPrimaryKeyword: carbon shipping cost projections
 seoSecondaryKeywords:
-  - monte carlo simulation
-  - co2 transport logistics
-  - carbon storage projections
+  - Monte Carlo simulation
+  - CO2 transport analysis
+  - shipping logistics
+  - cost estimation model
+  - data-driven decision making
 seoOptimized: true
 topicFamily: datascience
 topicFamilyConfidence: 1
 topicFamilyNotes: >-
-  The post centers on a Monte Carlo simulation for analyzing CO2 shipping costs, involving data
-  inputs, probabilistic modeling, Jupyter notebooks, and Python code, which aligns very closely with
-  the datascience family's scope including simulations, data analysis, and notebooks.
+  The post centers on a Monte Carlo simulation for analyzing CO2 shipping costs,
+  involving data inputs, probabilistic modeling, Jupyter notebooks, and Python
+  code, which aligns very closely with the datascience family's scope including
+  simulations, data analysis, and notebooks.
+kind: project
+id: github-carbon-storage-projections
 ---
 
 # Carbon Storage Projections: Monte Carlo Simulation of Shipping CO2 from Europe to US Ports
