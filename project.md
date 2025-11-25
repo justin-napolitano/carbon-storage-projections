@@ -14,13 +14,19 @@ tags:
   - python
   - carbon-storage
   - visualization
+  - jupyter notebook
+  - monte carlo simulation
+  - data analysis
+  - carbon shipping
+  - cost projections
+  - infrastructure
 seoPrimaryKeyword: carbon storage projections
 seoSecondaryKeywords:
-  - CO2 shipping analysis
-  - Monte Carlo simulation
-  - Jupyter Notebook project
-  - carbon shipping feasibility
-  - shipping infrastructure modeling
+  - CO2 transport analysis
+  - shipping cost modeling
+  - feasibility studies
+  - data visualization
+  - python libraries for analysis
 seoOptimized: true
 topicFamily: null
 topicFamilyConfidence: null
